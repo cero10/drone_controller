@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="spawn_drone" default="true" />
+	  <group if="$(arg spawn_drone)" ns="quadrotor1">
+		<!--<arg name="namespace" value="quadrotor1"/>-->
+
+		<node pkg="drone_controller" name="target_altitude_controller" type="target_altitude_controller.py" output="screen">
+		</node>  
+	  </group>
+
+
+	<group if="$(arg spawn_drone)" ns="quadrotor2">
+		<!--<arg name="namespace" value="quadrotor2"/>-->
+
+		<node pkg="drone_controller" name="target_altitude_controller" type="target_altitude_controller.py" output="screen">
+		</node>  
+	  </group>
+
+
+	<group if="$(arg spawn_drone)" ns="quadrotor3">
+		<!--<arg name="namespace" value="quadrotor3"/>-->
+
+		<node pkg="drone_controller" name="target_altitude_controller" type="target_altitude_controller.py" output="screen">
+		</node>  
+	  </group>
+</launch>

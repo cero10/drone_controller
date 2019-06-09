@@ -4,8 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /Status1
+        - /TF1/Frames1
         - /Map1/Status1
       Splitter Ratio: 0.50555557
     Tree Height: 775
@@ -58,8 +57,6 @@ Visualization Manager:
         All Enabled: false
         map:
           Value: true
-        nav:
-          Value: false
         quadrotor1/ardrone_base_bottomcam:
           Value: false
         quadrotor1/ardrone_base_frontcam:
@@ -83,7 +80,7 @@ Visualization Manager:
         quadrotor2/base_footprint:
           Value: false
         quadrotor2/base_link:
-          Value: false
+          Value: true
         quadrotor2/base_stabilized:
           Value: false
         quadrotor2/bottom_link:
@@ -99,7 +96,7 @@ Visualization Manager:
         quadrotor3/base_footprint:
           Value: false
         quadrotor3/base_link:
-          Value: false
+          Value: true
         quadrotor3/base_stabilized:
           Value: false
         quadrotor3/bottom_link:
@@ -115,40 +112,39 @@ Visualization Manager:
       Show Names: true
       Tree:
         map:
-          nav:
-            quadrotor1/base_footprint:
-              quadrotor1/base_stabilized:
-                quadrotor1/base_link:
-                  quadrotor1/bottom_link:
-                    quadrotor1/ardrone_base_bottomcam:
-                      {}
-                  quadrotor1/front_link:
-                    quadrotor1/ardrone_base_frontcam:
-                      {}
-                  quadrotor1/sonar_link:
+          quadrotor1/base_footprint:
+            quadrotor1/base_stabilized:
+              quadrotor1/base_link:
+                quadrotor1/bottom_link:
+                  quadrotor1/ardrone_base_bottomcam:
                     {}
-            quadrotor2/base_footprint:
-              quadrotor2/base_stabilized:
-                quadrotor2/base_link:
-                  quadrotor2/bottom_link:
-                    quadrotor2/ardrone_base_bottomcam:
-                      {}
-                  quadrotor2/front_link:
-                    quadrotor2/ardrone_base_frontcam:
-                      {}
-                  quadrotor2/sonar_link:
+                quadrotor1/front_link:
+                  quadrotor1/ardrone_base_frontcam:
                     {}
-            quadrotor3/base_footprint:
-              quadrotor3/base_stabilized:
-                quadrotor3/base_link:
-                  quadrotor3/bottom_link:
-                    quadrotor3/ardrone_base_bottomcam:
-                      {}
-                  quadrotor3/front_link:
-                    quadrotor3/ardrone_base_frontcam:
-                      {}
-                  quadrotor3/sonar_link:
+                quadrotor1/sonar_link:
+                  {}
+          quadrotor2/base_footprint:
+            quadrotor2/base_stabilized:
+              quadrotor2/base_link:
+                quadrotor2/bottom_link:
+                  quadrotor2/ardrone_base_bottomcam:
                     {}
+                quadrotor2/front_link:
+                  quadrotor2/ardrone_base_frontcam:
+                    {}
+                quadrotor2/sonar_link:
+                  {}
+          quadrotor3/base_footprint:
+            quadrotor3/base_stabilized:
+              quadrotor3/base_link:
+                quadrotor3/bottom_link:
+                  quadrotor3/ardrone_base_bottomcam:
+                    {}
+                quadrotor3/front_link:
+                  quadrotor3/ardrone_base_frontcam:
+                    {}
+                quadrotor3/sonar_link:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -182,9 +178,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: -999999
+      Max Intensity: 999999
       Min Color: 0; 0; 0
-      Min Intensity: 999999
+      Min Intensity: 0
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -232,25 +228,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 11.4984741
+      Distance: 6.49552965
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.252323896
-        Y: -1.79042816
-        Z: 1.47125959
+        X: 1.33279157
+        Y: -1.08554745
+        Z: 3.9212575
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.735398233
+      Pitch: 0.979796946
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.67539835
+      Yaw: 4.64176655
     Saved: ~
 Window Geometry:
   Displays:

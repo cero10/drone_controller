@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="spawn_drone" default="true" />
+
+	<node pkg="drone_controller" name="Launch_control" type="swarm_drone_launch_land.py" output="screen">
+	</node>  
+
+</launch>
